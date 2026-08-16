@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+.contenedor {
+  background-color: #003580;
+  color: white;
+  padding: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.navbar-brand img {
+  height: 100px; /* Ajusta el tamaño deseado */
+  width: auto; /* Mantiene la proporción */
+}
+.navbar-nav .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #0d6efd; /* Color de la línea animada */
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+
+
+.carruzel {
+  font-size: large;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-image:url(images/evento.png) ;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-size: cover; /* Ajusta la imagen para cubrir el contenedor */
+  height: 480px;
+  padding: 10px;
+
+   
+}
+.carruzel h1{
+  font-style: italic;
+  font-size: 60px;
+
+}
+.carruzel h2{
+  font-style: normal;
+  font-size: 40px;
+  
+}
+
+
+
+
+.buscar {
+  border: 2px solid;
+  background-color: #0dcaf0;
+  padding: 10px;
+  width: 250px;
+  color: white;
+  transition: transform 0.3s ease;
+  border-radius: 15px;
+ 
+}
+
+.buscar:hover {
+
+  cursor: pointer;
+  background-color: darkviolet;
+  transform: scale(1.2);
+}
+.destino{
+
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+  padding: 80px;
+  }
+
+
+  .signup{
+    background-color: #198754;
+    color: white;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    padding:  15px;
+    border: none;   
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+  .signup:hover{
+    cursor: pointer;
+    background-color: #0dcaf0;
+    transform: scale(1.2);
+  }
+  
+
+footer {
+    background-color: orange; 
+    color: white;
+    text-align: center;
+   
+  
+  
+}
+
+
